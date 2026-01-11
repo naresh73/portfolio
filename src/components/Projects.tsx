@@ -30,7 +30,7 @@ export default function Projects() {
       title: "Zuri",
       category: "AI Creative Platform",
       description:
-        "A cutting-edge AI-powered creative platform designed for modern paid-social marketing teams, enabling them to produce images, edits, and social-ready videos 10× faster. Built the entire frontend from scratch using React.js, Next.js, TypeScript, and Tailwind CSS. The platform streamlines the creative pipeline from brief to export-ready assets in one unified chat interface. Key features include brand-lock functionality that auto-loads color palettes, fonts, and aspect ratios from saved presets; inline editing capabilities eliminating the need for Photoshop; AI-powered video ideation with a built-in timeline editor; and CapCut-style tools including trims, captions, speed-ramps, and LUTs. The application exports to multiple formats (9:16, 1:1, 16:9) in a single render pass. Implemented real-time progress tracking using Pusher & Pusher JS for seamless video generation updates. Utilized Zustand for efficient state management and TanStack React Query for optimized data fetching and caching. Additionally, developed a comprehensive admin panel featuring user information management, credit allocation system, and plan-based access control, allowing administrators to monitor user activity, manage subscription tiers, and track usage analytics for the 10,000+ paid-social ads teams using the platform.",
+        "AI-powered creative platform for marketing teams to produce images, edits, and videos 10× faster. Built the entire frontend with React.js, Next.js, TypeScript, and Tailwind CSS. Features include brand-lock presets, inline editing, AI video tools with timeline editor, and multi-format export. Implemented real-time tracking with Pusher and developed an admin panel serving 10,000+ users.",
       image: ZuriImg,
       techStack: [
         "React.js",
@@ -45,10 +45,17 @@ export default function Projects() {
     {
       id: 2,
       title: "Prep My Vehicle",
-      category: "Web Application",
+      category: "Vehicle Reconditioning Management System",
       description:
-        "Project description will be provided here. This is a placeholder for the Prep My Vehicle project overview.",
+        "CRM web application for vehicle reconditioning that helps dealerships manage and track vehicles from warehouse arrival to final sale. Built with React.js, Next.js, Tailwind CSS, React Redux, and Axios. Fully mobile-responsive workshop management system with real-time vehicle tracking, condition monitoring, automated notifications, Vehicle Health Check (VHC) system, and vendor job allocation. Integrates with DMS systems for seamless data synchronization.",
       image: PrepMyVehicleImg,
+      techStack: [
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+        "React Redux",
+        "Axios",
+      ],
     },
     {
       id: 3,
