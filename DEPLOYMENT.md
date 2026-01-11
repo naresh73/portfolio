@@ -19,25 +19,27 @@ This guide will help you deploy your portfolio website to Vercel for **FREE**!
 1. **Create a GitHub account** (if you don't have one): [github.com](https://github.com)
 
 2. **Create a new repository**:
+
    - Go to GitHub and click "New repository"
    - Name it (e.g., `portfolio` or `my-portfolio`)
    - Make it **Public** (required for free Vercel)
    - Don't initialize with README (you already have one)
 
 3. **Push your code to GitHub**:
+
    ```bash
    # Initialize git (if not already done)
    git init
-   
+
    # Add all files
    git add .
-   
+
    # Commit
    git commit -m "Initial commit - Portfolio website"
-   
+
    # Add your GitHub repository (replace YOUR_USERNAME and REPO_NAME)
    git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
-   
+
    # Push to GitHub
    git branch -M main
    git push -u origin main
@@ -46,19 +48,24 @@ This guide will help you deploy your portfolio website to Vercel for **FREE**!
 ### Step 2: Deploy to Vercel
 
 1. **Sign up for Vercel**:
+
    - Go to [vercel.com](https://vercel.com)
    - Click "Sign Up"
    - Choose "Continue with GitHub" (easiest option)
 
 2. **Import your project**:
+
    - After signing in, click "Add New..." → "Project"
    - Find your repository and click "Import"
    - Vercel will auto-detect Next.js settings
 
 3. **Configure Environment Variables**:
+
    - In the "Environment Variables" section, add:
-     - `RESEND_API_KEY` = Your Resend API key
-     - `CONTACT_EMAIL` = Your email address
+     - `RESEND_API_KEY` = Your Resend API key (get from https://resend.com/api-keys)
+     - `CONTACT_EMAIL` = Your email address (where you want to receive form submissions)
+   - **Important:** Select all environments (Production, Preview, Development)
+   - Click "Save" for each variable
    - Click "Deploy"
 
 4. **Wait for deployment** (usually 1-2 minutes)
@@ -99,15 +106,18 @@ vercel
 ## Troubleshooting
 
 ### Build Errors
+
 - Make sure all dependencies are in `package.json`
 - Check that your code builds locally: `npm run build`
 
 ### Environment Variables Not Working
+
 - Double-check variable names (case-sensitive)
 - Redeploy after adding new variables
 - Check Vercel logs for errors
 
 ### Contact Form Not Working
+
 - Verify `RESEND_API_KEY` is set correctly
 - Check Resend dashboard for email logs
 - Make sure `CONTACT_EMAIL` is set
@@ -115,6 +125,7 @@ vercel
 ## Alternative Free Hosting Options
 
 ### Netlify
+
 1. Sign up at [netlify.com](https://netlify.com)
 2. Connect GitHub repository
 3. Build command: `npm run build`
@@ -122,6 +133,7 @@ vercel
 5. Add environment variables
 
 ### Cloudflare Pages
+
 1. Sign up at [pages.cloudflare.com](https://pages.cloudflare.com)
 2. Connect GitHub repository
 3. Framework preset: Next.js
@@ -136,4 +148,3 @@ vercel
 ---
 
 **Congratulations! Your portfolio is now live! 🎉**
-
